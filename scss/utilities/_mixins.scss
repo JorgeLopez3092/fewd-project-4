@@ -1,0 +1,12 @@
+
+// Media Query - Can be expanded upon with more conditionals as need arises
+@mixin mq($break){
+    @if $break == 'med' {
+      @media (min-width: $breakpoint-medium) {
+        @content;
+      }
+    }
+    @else {
+      @error "Oops! Please only 'med' is currently a valid argument for this mixin. You entered: '#{$break}'.";
+    }
+  }

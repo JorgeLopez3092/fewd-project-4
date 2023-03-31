@@ -1,0 +1,71 @@
+  /* ============================================= */
+  /*              Buttons                          */
+  /* ============================================= */
+
+  .btn {
+      margin-top: 15px;
+      width: 100%;
+      color: $color-button;
+      border: none;
+      padding: 10px 0;
+      text-transform: uppercase;
+      border-radius: 5px;
+
+      @include mq(med) {
+          padding: 10px 30px;
+      }
+
+      &+.btn {
+          margin-left: 10px;
+      }
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-button, 20%)
+      }
+  }
+
+  .default {
+      background-color: $color-default;
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-default, 20%)
+      }
+  }
+
+  .error {
+      background-color: $color-error;
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-error, 20%)
+      }
+  }
+
+  .info {
+      background-color: $color-info;
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-info, 20%)
+      }
+  }
+
+  .success {
+      background-color: $color-success;
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-success, 20%)
+      }
+  }
+
+  .warning {
+      background-color: $color-warning;
+
+      &:hover {
+          cursor: pointer;
+          background-color: lighten($color-warning, 20%)
+      }
+  }
